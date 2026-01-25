@@ -9,7 +9,7 @@ struct Matrix_Base
     dtype* colptr;
     size_t size;
 
-    Matrix_Base(unsigned long m, unsigned long n) :  size(n * m), data(new dtype[m * n])
+    Matrix_Base(size_t m, size_t n) :  size(n * m), data(new dtype[m * n])
     {
         for(int i = 0; i < size; i++)
         {
