@@ -100,12 +100,9 @@ template <typename dtype>
 Matrix_Base<dtype> MatrixScalarMulti(const Matrix_Base<dtype>& Matrix, const long scalar)
 {
     dtype resultVec[Matrix.size];
-    if (scalar == 0)
+    if (scalar != long)
     {
-        
-        
-        std::cout << "Scalarm is 0." << std::endl;
-        return 
+        throw std::invalid_argument("Scalar is not a valid type. Please enter a valid scalar.");
     }
 
     for(int i = 0; i < Matrix; i++)
@@ -116,10 +113,12 @@ Matrix_Base<dtype> MatrixScalarMulti(const Matrix_Base<dtype>& Matrix, const lon
 }
 
 template <typename dtype> 
-Matrix_Base<dtype> MatrixMultiplacation*(const MatrixBase<dtype>& Matrix1, const Matrix_Base<dtype>& Matrix2)
+Matrix_Base<dtype> MatrixMultiplacation(const Matrix_Base<dtype>& Matrix1, const Matrix_Base<dtype>& Matrix2)
 {
     if (Matrix1.cols != Matrix2.rows)
     {
-        throw std::Invalid
+        throw std::invalid_arguement("The Columns of the first Matrix do not match the rows of second Matrix.\n Enter a valid Matrix for multiplcation.")
+
     }
+    for(int i = 0)
 }
