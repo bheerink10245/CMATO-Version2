@@ -60,9 +60,66 @@ Matrix_Base<dtype> MatrixAddition(const Matrix_Base<dtype>& Matrix1, const Matri
     {
         throw std::invalid_argument("Matrices do not have same number of rows");
     }
-    if (Matrix1.cols != Matrix2.cols)
+    else if (Matrix1.cols != Matrix2.cols)
     {
-        thorw std::invalid_argument("Matrices do not have same number of columns.");
+        throw std::invalid_argument("Matrices do not have same number of columns.");
     }
 
+    dtype resultVec[Matrix1.size];
+
+    for (int i = 0; i < Matrix1.size; i++)
+    {
+        resultVec[i] = Matrix1[i] + Matrix2[i];
+
+    }
+    return resultVec;
+}
+template <typename dtype>
+Matrix_Base<dtype> MatrixSubtraction(const Matrix_Base<dtype>& Matrix1, const Matrix_Base<dtype>& Matrix2)
+{
+    if (Matrix1.rows != Matrix2.rows)
+    {
+        throw std::invalid_argument("Matrices do not have same number of rows");
+    }
+    else if (Matrix1.cols != Matrix2.cols)
+    {
+        throw std::invalid_argument("Matrices do not have same number of columns.");
+    }
+
+    dtype resultVec[Matrix1.size];
+
+    for (int i = 0; i < Matrix1.size; i++)
+    {
+        resultVec[i] = Matrix1[i] - Matrix2[i];
+
+    }
+    return resultVec;
+}
+
+template <typename dtype>
+Matrix_Base<dtype> MatrixScalarMulti(const Matrix_Base<dtype>& Matrix, const long scalar)
+{
+    dtype resultVec[Matrix.size];
+    if (scalar == 0)
+    {
+        
+        
+        std::cout << "Scalarm is 0." << std::endl;
+        return 
+    }
+
+    for(int i = 0; i < Matrix; i++)
+    {
+        resultVec[i] = scalar * Matrix[i];
+    }
+    return resultVec;
+}
+
+template <typename dtype> 
+Matrix_Base<dtype> MatrixMultiplacation*(const MatrixBase<dtype>& Matrix1, const Matrix_Base<dtype>& Matrix2)
+{
+    if (Matrix1.cols != Matrix2.rows)
+    {
+        throw std::Invalid
+    }
 }
