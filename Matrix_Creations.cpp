@@ -113,12 +113,12 @@ Matrix_Base<dtype> MatrixScalarMulti(const Matrix_Base<dtype>& Matrix, const lon
 }
 
 template <typename dtype> 
-Matrix_Base<dtype> MatrixMultiplacation(const Matrix_Base<dtype>& Matrix1, const Matrix_Base<dtype>& Matrix2)
+Matrix_Base<dtype> MatrixMultiplication(const Matrix_Base<dtype>& Matrix1, const Matrix_Base<dtype>& Matrix2)
 {
     if (Matrix1.cols != Matrix2.rows)
     {
         throw std::invalid_arguement("The Columns of the first Matrix do not match the rows of second Matrix.\n Enter a valid Matrix for multiplcation.")
 
     }
-    for(int i = 0)
+    for(int i = 0
 }
