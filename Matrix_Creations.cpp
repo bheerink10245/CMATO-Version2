@@ -1,19 +1,23 @@
+
+// Creating ArrayMatrix, goonna do 2D after. Doing both first
+// COnstructors are currently crap :/ 
+
 #include <iostream>
 #include <vector>
 #include <stdexcept>
 
 template <typename dtype>
-struct Matrix_Base
+struct ArrayMatrix
 {
     dtype* data;
     dtype* rowptr;
-    dtype* colptr;
+    dtype>* colptr;
     size_t size;
     size_t rows;
     size_t cols;
 
 
-    Matrix_Base(size_t m, size_t n) :  rows(m), cols(n), size(n * m), data(new dtype[m * n])
+    ArrayMatrix(size_t m, size_t n) :  rows(m), cols(n), size(n * m), data(new dtype[m * n])
     {
         for(int i = 0; i < size; i++)
         {
@@ -21,7 +25,7 @@ struct Matrix_Base
         } 
     }
 
-    Matrix_Base& opreator=(const Matrix_Base& other)
+    ArrayMatrix& opreator=(const Matrix_Base& other)
     {
         if(this != &other)
         {
@@ -35,7 +39,7 @@ struct Matrix_Base
 
             return *this;
         }
-    ~Matrix_Base()
+    ~Matrix()
     {
         std::cout << "Deleted Matrix @:" << data << "of size" << size(n) << std::endl;
         delete data[];
@@ -120,5 +124,10 @@ Matrix_Base<dtype> MatrixMultiplication(const Matrix_Base<dtype>& Matrix1, const
         throw std::invalid_arguement("The Columns of the first Matrix do not match the rows of second Matrix.\n Enter a valid Matrix for multiplcation.")
 
     }
-    for(int i = 0
+
+
+    
+    
+    
+   
 }
