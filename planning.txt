@@ -7,11 +7,7 @@ STDMatr = Matrix Constructed by Vector include
 
 
 > Finish Matrix Creations that resemble a massive array. (ArM)
- +	> The columns are indexed by 2 pointers, one for the rows, one for cols
- +	> Still how to design semantics on how that would work.
- +	> Currently theres no way to distinguish how which index of SizM is the 
 		partion of a row belong and column belong
- +	> Is there a nullterminator at end of ArM ----NO
 > Create the actual Matrix using STD::vector<dtype> (STDMatr)
 	>Likely will be easier just because there built in function
 	>Resembles all the same major functions and properties of ArM
