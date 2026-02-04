@@ -15,9 +15,10 @@ struct ArrayMatrix
     size_t size;
     size_t rows;
     size_t cols;
+    dtype dataMatrix;
 
 
-    ArrayMatrix(size_t m, size_t n) :  rows(m), cols(n), size(n * m), data(new dtype[m * n])
+    ArrayMatrix(size_t m, size_t n, dataMatrix[]) : rows(m), cols(n), size(m * n), data(new dataMatrix[])
     {
         for(int i = 0; i < size; i++)
         {
@@ -25,7 +26,7 @@ struct ArrayMatrix
         } 
     }
 
-    ArrayMatrix& opreator=(const Matrix_Base& other)
+    ArrayMatrix& opreator=(const ArrayMatrix& other)
     {
         if(this != &other)
         {
@@ -39,7 +40,7 @@ struct ArrayMatrix
 
             return *this;
         }
-    ~Matrix()
+    ~ArrayMatrix()
     {
         std::cout << "Deleted Matrix @:" << data << "of size" << size(n) << std::endl;
         delete data[];
@@ -58,7 +59,7 @@ struct ArrayMatrix
 // 
 
 template <typename dtype>
-Matrix_Base<dtype> MatrixAddition(const Matrix_Base<dtype>& Matrix1, const Matrix_Base<dtype>& Matrix2)
+ArrayMatrix<dtype> MatrixAddition(const ArrayMatrix<dtype>& Matrix1, const ArrayMatrix<dtype>& Matrix2)
 {
     if (Matrix1.rows != Matrix2.rows)
     {
@@ -79,7 +80,7 @@ Matrix_Base<dtype> MatrixAddition(const Matrix_Base<dtype>& Matrix1, const Matri
     return resultVec;
 }
 template <typename dtype>
-Matrix_Base<dtype> MatrixSubtraction(const Matrix_Base<dtype>& Matrix1, const Matrix_Base<dtype>& Matrix2)
+ArrayMatrix<dtype> MatrixSubtraction(const ArrayMatrix<dtype>& Matrix1, const ArrayMatrix<dtype>& Matrix2)
 {
     if (Matrix1.rows != Matrix2.rows)
     {
@@ -101,7 +102,7 @@ Matrix_Base<dtype> MatrixSubtraction(const Matrix_Base<dtype>& Matrix1, const Ma
 }
 
 template <typename dtype>
-Matrix_Base<dtype> MatrixScalarMulti(const Matrix_Base<dtype>& Matrix, const long scalar)
+ArrayMatrix<dtype> MatrixScalarMulti(const ArrayMatrix<dtype>& Matrix, const long scalar) 
 {
     dtype resultVec[Matrix.size];
     if (scalar != long)
@@ -117,17 +118,15 @@ Matrix_Base<dtype> MatrixScalarMulti(const Matrix_Base<dtype>& Matrix, const lon
 }
 
 template <typename dtype> 
-Matrix_Base<dtype> MatrixMultiplication(const Matrix_Base<dtype>& Matrix1, const Matrix_Base<dtype>& Matrix2)
+ArrayMatrix<dtype> MatrixMultiplication(const ArrayMatrix<dtype>& Matrix1, const ArrayMatrix<dtype>& Matrix2)
 {
     if (Matrix1.cols != Matrix2.rows)
     {
         throw std::invalid_arguement("The Columns of the first Matrix do not match the rows of second Matrix.\n Enter a valid Matrix for multiplcation.")
-
     }
 
-
-    
-    
     
    
 }
+
+

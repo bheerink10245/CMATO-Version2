@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\Matrix_Creations.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Matrix_Creations.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\planning.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:planning.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\multiplaction-iteration-loop-samples||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:multiplaction-iteration-loop-samples||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\One_Dim_Creations.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:One_Dim_Creations.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 251,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-01T20:47:39.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "One_Dim_Creations.cpp",
+              "DocumentMoniker": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\One_Dim_Creations.cpp",
+              "RelativeDocumentMoniker": "One_Dim_Creations.cpp",
+              "ToolTip": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\One_Dim_Creations.cpp",
+              "RelativeToolTip": "One_Dim_Creations.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-01T04:39:52.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Matrix_Creations.cpp",
+              "DocumentMoniker": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\Matrix_Creations.cpp",
+              "RelativeDocumentMoniker": "Matrix_Creations.cpp",
+              "ToolTip": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\Matrix_Creations.cpp",
+              "RelativeToolTip": "Matrix_Creations.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-01T04:33:41.866Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 181,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "planning.txt",
+              "DocumentMoniker": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\planning.txt",
+              "RelativeDocumentMoniker": "planning.txt",
+              "ToolTip": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\planning.txt",
+              "RelativeToolTip": "planning.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-02-01T04:40:31.711Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "multiplaction-iteration-loop-samples",
+              "DocumentMoniker": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\multiplaction-iteration-loop-samples",
+              "RelativeDocumentMoniker": "multiplaction-iteration-loop-samples",
+              "ToolTip": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\multiplaction-iteration-loop-samples",
+              "RelativeToolTip": "multiplaction-iteration-loop-samples",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-01T04:33:32.832Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
