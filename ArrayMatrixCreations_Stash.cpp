@@ -40,3 +40,49 @@ ArrayMatrix<dtype> MatrixMultiplication(const ArrayMatrix<dtype>& Matrix1, const
 
 
 }
+
+
+
+// 
+
+template <typename dtype>
+
+struct StandardMatrix {
+    dtype* data;
+    size_t rowNum;
+    size_t colNum;
+    size_t rows;
+    size_t cols;
+
+
+
+    StandardMatrix(size_t m, size_t n) : rows(m), cols(n), int size(m* n), data(new dataMatrix[m][n])
+    {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; i < cols; j++) {
+                data[i][j] = 0;
+
+            }
+        }
+    }
+
+    ~StandardMatrix() {
+        std::cout << "Deleted Standard Matrix @" << data << std::endl;
+        delete data[][];
+
+    }
+
+
+
+ 
+};
+
+
+template <typename dtype>
+StandardMatrix<dtype> StandardMatrixMultiplication(const StandardMatrix<dtype>& Matrix1, const StandardMatrix<dtype>& Matrix2) {
+
+
+}
+
+
+    

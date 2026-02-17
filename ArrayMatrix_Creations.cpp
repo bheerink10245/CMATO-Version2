@@ -11,14 +11,14 @@ struct ArrayMatrix
 {
     dtype* data;
     dtype* rowptr;
-    dtype>* colptr;
+    dtype* colptr;
     size_t size;
     size_t rows;
     size_t cols;
     dtype dataMatrix;
 
 
-    ArrayMatrix(size_t m, size_t n, dataMatrix[]) : rows(m), cols(n), size(m * n), data(new dataMatrix[])
+    ArrayMatrix(size_t m, size_t n, dataMatrix[]) : rows(m), cols(n), size(m * n), data(new dataMatrix[size])
     {
         for(int i = 0; i < size; i++)
         {
