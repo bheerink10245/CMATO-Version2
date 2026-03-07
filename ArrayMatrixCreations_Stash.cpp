@@ -14,16 +14,6 @@ for (int i = 0; i < rows; i + rows) {
 }
 
 
-
-// Protoype for multiplcation
-
-
-
-
-// Takes in the 2 arrays
-
-
-
 template <typename dtype>
 ArrayMatrix<dtype> MatrixMultiplication(const ArrayMatrix<dtype>& Matrix1, const ArrayMatrix<dtype>&Matrix2)
 {
@@ -36,7 +26,7 @@ ArrayMatrix<dtype> MatrixMultiplication(const ArrayMatrix<dtype>& Matrix1, const
 
     dtype resultVec[Matrix1.rows * Matrix2.cols];
 
-    for(int )
+    for(int i = 0; )
 
 
 }

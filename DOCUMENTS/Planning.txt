@@ -1,0 +1,24 @@
+
+Notation:
+
+SizM= Large Matrix Array whch represent the m x n matrix where size(m * n) = SizM
+ArM = Large Array Style matrix
+STDMatr = Matrix Constructed by Vector include
+
+
+> Finish Matrix Creations that resemble a massive array. (ArM)
+		partion of a row belong and column belong
+> Create the actual Matrix using STD::vector<dtype> (STDMatr)
+	>Likely will be easier just because there built in function
+	>Resembles all the same major functions and properties of ArM
+>Check and make sure all the actual math operations are correct
+>Incorporate exception error throwing 
+>Check for memory leaks and hanging pointers
+>Incorporate smart pointers 
+>Incorporate size_t where you can for portability. 
+	>Will make it alot easier on laptop.
+> Distinigusing which 2D type to use for Algorithims efficiency
+	> Is ArM or STDMatr for X algorthim (SVD, Least Squares)
+	> This will kinda dicatate what I add ontop of the library.
+
+

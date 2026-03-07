@@ -1,0 +1,52 @@
+
+DOCUMENTATION
+
+* 1D Array Types
+
+* 2D Matrix Types
+Objects:
+	- Array Matrix   ---TEMPLATE
+		-> Parameters : Datatypes m & n.
+		
+		-> Constructor : Copy Initilizer list creates rows(m), cols(n), size(m*n), data  pointer to new 1 []
+			-Fills full Object with 0's
+
+		-> Applicable Functions:
+			:: MatrixAdditon:
+				-> Adds 2 Matrices
+				->Paramters: 2 const Matrices A,B
+				-> Returns: A + B
+			:: MatrixSubtraction:
+				-> Subtracts 2 Matrices
+				-> Parameters: 2 const Matrices A,B
+				-> Returns: A - B = C Marix
+			:: MatrixScalarMulti
+				-> Multiplies a matrix by a scalar
+				-> Paramters: Matrix A, const long double
+				-> Returns: λ * Matrix A
+			:: MatrixMultiplcation
+				-> Multiplies 2 m x n * n x p
+				-> Parameters: Matrix A, Matrix B
+				-> Return: A * B = C Matrix (m x p)
+			:: MatrixInverse
+				-> Takes inverse of the Matrix
+					- Multiply Identity --suffix -- ID()
+					- CoFactor Expansion --suffix -- Co()
+				-> Parameters: 
+					- ID()
+						- Matrix A, Identify of the n x n
+					- Co()
+						- Matrix A
+				--> Safe guard: A is n x n
+				--> Returns: A^-1 (n x n)
+			:: MatrixDisplay
+				-> Displays the Array Matrix in 1D Form
+				-> Parameters: Matrix A
+				-> Returns: [Matrix A.size()]
+			:: MatrixDisplay2D
+				-> Displays the Array Matrix in 2D Matrix Form
+				-> Parameters: Matrix A
+				-> Returns: [Matrix A.rows() * Matrix A.cols()]
+		-> Destructor: Deletes Matrix and Prints address and Identifier Tag
+
+

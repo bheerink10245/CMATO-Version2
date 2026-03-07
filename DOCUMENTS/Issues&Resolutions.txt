@@ -1,0 +1,8 @@
+1. 2D Array Matrix
+	- Figure out trans-datatype operation resultants
+	Example: Let auto Resultvec = Matrix<int> +/-/* Matrix<double>
+		-Automatic resoltion of data type
+		-Flag the change in data type, but allow the conversion.
+2. Create an iterator for the constructor of each object that tracks number of exisitn objects
+	-> numOfObjects++ in constructor and gives it its own Identifier code
+	-> numOfObjects-- in destructor and returns the address at which it deleted and which identiffier code was deleted
