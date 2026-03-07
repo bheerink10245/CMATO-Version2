@@ -11,14 +11,23 @@ struct ArrayMatrix
 public:
 
     dtype* data;
+<<<<<<< HEAD
     constexpr dtype* rowptr;
     constexpr dtypee* colptr;
+=======
+    dtype* rowptr;
+    dtype* colptr;
+>>>>>>> 7479ed13485430e97df6d54cc8d3c16aa8c4510a
     size_t size;
     size_t rows;
     size_t cols;
 
 
+<<<<<<< HEAD
     ArrayMatrix(size_t m, size_t n) : rows(m), cols(n), size(m * n), data(new [])
+=======
+    ArrayMatrix(size_t m, size_t n, dataMatrix[]) : rows(m), cols(n), size(m * n), data(new dataMatrix[size])
+>>>>>>> 7479ed13485430e97df6d54cc8d3c16aa8c4510a
     {
         for(int i = 0; i < size; i++)
         {
