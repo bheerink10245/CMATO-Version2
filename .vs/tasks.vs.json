@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-OneDimCreations",
+      "appliesTo": "OneDimCreations.cpp",
+      "type": "launch"
+    }
+  ]
+}
