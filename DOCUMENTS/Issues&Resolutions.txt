@@ -6,3 +6,5 @@
 2. Create an iterator for the constructor of each object that tracks number of exisitn objects
 	-> numOfObjects++ in constructor and gives it its own Identifier code
 	-> numOfObjects-- in destructor and returns the address at which it deleted and which identiffier code was deleted
+3. OneDim addiiton needs to decide whether to fill if for Arr[n] & Arr[m] n != m, will it fill
+4. Create a parent class for ArrayMatrix and StandardMatrix so don't have to write twice. 

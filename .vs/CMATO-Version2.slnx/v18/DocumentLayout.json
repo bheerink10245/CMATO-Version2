@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\DOCUMENTS\\Issues\u0026Resolutions.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DOCUMENTS\\Issues\u0026Resolutions.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\DOCUMENTS\\Documentation.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DOCUMENTS\\Documentation.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\DOCUMENTS\\Issues\u0026Resolutions.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DOCUMENTS\\Issues\u0026Resolutions.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\OneDimCreations.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OneDimCreations.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,18 +35,31 @@
           ]
         },
         {
-          "DockedWidth": 243,
+          "DockedWidth": 120,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Issues\u0026Resolutions.txt",
+              "DocumentMoniker": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\DOCUMENTS\\Issues\u0026Resolutions.txt",
+              "RelativeDocumentMoniker": "DOCUMENTS\\Issues\u0026Resolutions.txt",
+              "ToolTip": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\DOCUMENTS\\Issues\u0026Resolutions.txt",
+              "RelativeToolTip": "DOCUMENTS\\Issues\u0026Resolutions.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-03-07T04:36:49.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Documentation.txt",
               "DocumentMoniker": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\DOCUMENTS\\Documentation.txt",
               "RelativeDocumentMoniker": "DOCUMENTS\\Documentation.txt",
               "ToolTip": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\DOCUMENTS\\Documentation.txt",
               "RelativeToolTip": "DOCUMENTS\\Documentation.txt",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAFUAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2026-03-06T23:13:01.615Z",
               "EditorCaption": ""
@@ -50,20 +67,20 @@
           ]
         },
         {
-          "DockedWidth": 14,
+          "DockedWidth": 105,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Issues\u0026Resolutions.txt",
-              "DocumentMoniker": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\DOCUMENTS\\Issues\u0026Resolutions.txt",
-              "RelativeDocumentMoniker": "DOCUMENTS\\Issues\u0026Resolutions.txt",
-              "ToolTip": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\DOCUMENTS\\Issues\u0026Resolutions.txt",
-              "RelativeToolTip": "DOCUMENTS\\Issues\u0026Resolutions.txt",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-03-06T23:12:50.707Z",
+              "DocumentIndex": 2,
+              "Title": "OneDimCreations.cpp",
+              "DocumentMoniker": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\OneDimCreations.cpp",
+              "RelativeDocumentMoniker": "OneDimCreations.cpp",
+              "ToolTip": "C:\\Users\\Heroi\\source\\repos\\bheerink10245\\CMATO-Version2\\OneDimCreations.cpp",
+              "RelativeToolTip": "OneDimCreations.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-07T01:59:54.192Z",
               "EditorCaption": ""
             }
           ]

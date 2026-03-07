@@ -1,20 +1,54 @@
 
+
 DOCUMENTATION
 
-* 1D Array Types
+All functions of objects do not modify objects. All functions are const. 
+All functions return seperate, new objects
+For any A (operator) B = New heap allocated object of type of A/B
 
-* 2D Matrix Types
-Objects:
-	- Array Matrix   ---TEMPLATE
-		-> Parameters : Datatypes m & n.
+
+
+>> 1D Array Types ---- OBJECTS ----
+-Name: Array1D  ---TEMPLATE
+		-> Constructor Parameters: Dataypes n
+
+		-> Copy Intilizater list: creates size(n), data pointer to dtpye[n]
+
+		-> Applicable Functions:
+			:: OneDimAddition:
+				->Adds 2 1D Arrays,
+				-> Parameters: Array A, Array B
+				-> Returns: A + B
+			:: OneDimSubtraction
+				-> Subtracts 2 1D Arrays
+				-> Parameters: Array A, Array B
+				-> Returns: A - B
+			:: OneDimScalarMultiplication
+				-> Multiplies values of a 1D array by a scalar multiple
+				-> Parameters: Array A, long double λ
+				-> Reutrns: λ * B
+			:: OneDimCrossProduct
+				-> Finds the cross product of 2 Arrays
+				-> Parameters: Array A, Array B
+				-> Returns: A x B 
+			:: OneDimDotProduct
+				-> Finds the dot product of 2 Arrays
+				-> Paramteres: Array A, Array B
+				-> Returns: A • B 
+
+
+>>2D Matrix Types ---- OBJECTS -----
+	- Name: Array Matrix   ---TEMPLATE
+		Description: A 2D matrix with m x n that functions as a Flattened 1D Array Matrix of size(m * n)
+		-> Constructor Parameters : Datatypes m & n.
 		
-		-> Constructor : Copy Initilizer list creates rows(m), cols(n), size(m*n), data  pointer to new 1 []
+		-> Copy Initilizer list: creates rows(m), cols(n), size(m*n), data  pointer to new 1 []
 			-Fills full Object with 0's
 
 		-> Applicable Functions:
 			:: MatrixAdditon:
 				-> Adds 2 Matrices
-				->Paramters: 2 const Matrices A,B
+				->Parameters: 2 const Matrices A,B
 				-> Returns: A + B
 			:: MatrixSubtraction:
 				-> Subtracts 2 Matrices
@@ -22,7 +56,7 @@ Objects:
 				-> Returns: A - B = C Marix
 			:: MatrixScalarMulti
 				-> Multiplies a matrix by a scalar
-				-> Paramters: Matrix A, const long double
+				-> Parameters: Matrix A, const long double
 				-> Returns: λ * Matrix A
 			:: MatrixMultiplcation
 				-> Multiplies 2 m x n * n x p
@@ -48,5 +82,8 @@ Objects:
 				-> Parameters: Matrix A
 				-> Returns: [Matrix A.rows() * Matrix A.cols()]
 		-> Destructor: Deletes Matrix and Prints address and Identifier Tag
+	- Name: Standard Matrix --TEMPLATE
+		Description: A 2D Matrix that acts and functions as a 2D Matrix of [m][n] structure;
+		
 
 
