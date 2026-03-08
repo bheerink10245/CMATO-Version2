@@ -11,7 +11,7 @@ For any A (operator) B = New heap allocated object of type of A/B
 >> 1D Array Types ---- OBJECTS ----
 -Name: Array1D  ---TEMPLATE
 		-> Constructor Parameters: Dataypes n
-
+			-> FILLS WHOLE ARRAY WITH 0's
 		-> Copy Intilizater list: creates size(n), data pointer to dtpye[n]
 
 		-> Applicable Functions:
