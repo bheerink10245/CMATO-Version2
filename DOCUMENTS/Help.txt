@@ -7,3 +7,5 @@
 
 #git revert HEAD
 
+#git fetch origin // syncs and overwrites local files
+#git reset --hard origin/main
