@@ -46,80 +46,71 @@ struct Array1D
 		delete[] data;
 
 	}
-
-	dtype& operator[](size_t i)
+}:
+template <typename Utype>
+Array1D<std::common_type_t<dtype,Utype>> OneDimAddition(const Array1D<dtype>& Array1, const Array1D<Utype>& Array2)
+{
+	if (Array1.size != Array2.size)
 	{
-		if (i >= size)
-		{
-			throw std::out_of_range("Index of the Array you are trying to pass is out of bounds.");
-			return data[i];
-		}
-	}
-	template <typename Utype>
-	Array1D<std::common_type_t<dtype,Utype>> OneDimAddition(const Array1D<dtype>& Array1, const Array1D<Utype>& Array2)
-	{
-		if (Array1.size != Array2.size)
-		{
-			throw std::invalid_argument("Arrays must be same size.");
+		throw std::invalid_argument("Arrays must be same size.");
 			
-		}
-		Array1D<auto> ResultantArray[Array1.size];
-		for (size_t i = 0; i < Array1.size; i++)
-		{
-			ResultantArray.data[i] = Array1.data[i] + Array2.data[i];
-
-		}
-		return ResultantArray;
-
 	}
-	template <typename Utype>
-	Array1D<std::common_type_t<dtype,Utype>> OneDimSubtraction(const Array1D<dtype>& Array1, const Array1D<Utype>& Array2)
+	Array1D<auto> ResultantArray[Array1.size];
+	for (size_t i = 0; i < Array1.size; i++)
 	{
-		if (Array1.size != Array2.size)
-		{
-			throw std::invalid_argument("Arrays must be same size.");
+		ResultantArray.data[i] = Array1.data[i] + Array2.data[i];
 
-		}
-
-		Array1D<auto> ResultantArray[Array1.size];
-		for (size_t i = 0; i < Array1.size; i++)
-		{
-			ResultantArray.data[i] = Array1.data[i] - Array1.data[i];
-
-		}
-		return ResultantArray;
 	}
-	template <typename Utype>
-	Array1D<std::common_type_t<dtype, Utype>> OneDimScalarMultiplication(const Array1D<dtype>& Array1, const long double& Lambda)
+	return ResultantArray;
+
+}
+template <typename dtype,typename Utype>
+Array1D<std::common_type_t<dtype,Utype>> OneDimSubtraction(const Array1D<dtype>& Array1, const Array1D<Utype>& Array2)
+{
+	if (Array1.size != Array2.size)
 	{
-		if (Lambda == 0)
-		{
-			throw std::error_condition("Scalar can not be 0");
-		}
+		throw std::invalid_argument("Arrays must be same size.");
 
-
-		Array1D<auto> ResultantArray[Array1.size];
-		for (size_t i = 0; i < Array1.size, i++)
-		{
-			ResultantArray.data[i] = Array1.data[i] * Lambda;
-
-		}
-		return ResultantArray;
 	}
-	template <typename Utype>
-	Array1D<std::common_type_t<dtype, Utype>> OneDimCrossProduct(const Array1D<dtype>& Array1, const Array1D<Utype> Array2)
+
+	Array1D<auto> ResultantArray[Array1.size];
+	for (size_t i = 0; i < Array1.size; i++)
 	{
-		if (Array1.size != Array2.size)
-		{
-			throw std::invalid_argument("Arrays must be same 0.");
-		}
+		ResultantArray.data[i] = Array1.data[i] - Array1.data[i];
 
-		Array1D<auto> ResultantArray[Array1.size];
-		for (size_t i = 0; Array1.size; i++)
-		{
-
-		}
 	}
-};
+	return ResultantArray;
+}
+template <typename dtype,typename Utype>
+Array1D<std::common_type_t<dtype, Utype>> OneDimScalarMultiplication(const Array1D<dtype>& Array1, const long double& Lambda)
+{
+	if (Lambda == 0)
+	{
+		throw std::error_condition("Scalar can not be 0");
+	}
+
+
+	Array1D<auto> ResultantArray[Array1.size];
+	for (size_t i = 0; i < Array1.size, i++)
+	{
+		ResultantArray.data[i] = Array1.data[i] * Lambda;
+
+	}
+	return ResultantArray;
+}
+template <typename Utype>
+Array1D<std::common_type_t<dtype, Utype>> OneDimCrossProduct(const Array1D<dtype>& Array1, const Array1D<Utype> Array2)
+{
+	if (Array1.size != Array2.size)
+	{
+		throw std::invalid_argument("Arrays must be same 0.");
+	}
+
+	Array1D<auto> ResultantArray[Array1.size];
+	for (size_t i = 0; Array1.size; i++)
+	{
+
+	}
+}
 
 

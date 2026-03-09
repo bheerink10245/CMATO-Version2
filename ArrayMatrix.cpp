@@ -6,9 +6,9 @@
 #include <stdexcept>
 #include <string>
 #include <cstring>
-
+#include "TwoDimParent.h"
 template <typename dtype>
-struct ArrayMatrix
+struct ArrayMatrix : public 2DParent
 {
 public:
 
@@ -18,7 +18,7 @@ public:
     constexpr size_t size;
     const size_t rows;
     const size_t cols;
-    int ObjectCounter;
+    int32_t ObjectCounter;
 
     ArrayMatrix(size_t m, size_t n) : rows(m), cols(n), size(m * n), data(new []), std::string IdentifierString
     {
@@ -40,7 +40,7 @@ public:
             constexpr data = new dtype[size];
             for (size_t i = 0; i < size; i++)
             {
-                data[i] = other.size[i];
+                data[i] = other.data[i];
             }
 
             return *this;
@@ -71,7 +71,7 @@ ArrayMatrix<dtype> MatrixAddition(const ArrayMatrix<dtype>& Matrix1, const Array
         throw std::invalid_argument("Matrices do not have same number of columns.");
     }
 
-    dtype resultVec[Matrix1.size];https://open.spotify.com/track/577YBGuskWkVDCxZrLRB4v
+    dtype resultVec[Matrix1.size];
 
     for (int i = 0; i < Matrix1.size; i++)
     {
