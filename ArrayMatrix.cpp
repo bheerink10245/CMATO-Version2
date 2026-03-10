@@ -8,6 +8,7 @@
 #include <cstring>
 #include "TwoDimParent.h"
 template <typename dtype>
+
 struct ArrayMatrix : public 2DParent
 {
 public:
@@ -27,7 +28,7 @@ public:
              data[i] = 0;
         } 
         ObjectCounter++;
-        IdentifierString = strcat("ARRAY MATRIX: ", ObjectCounter);
+        IdentifierString = strcat("ARRAY MATRIX: ", ObjectCounter); //fix 
 
     }
 
