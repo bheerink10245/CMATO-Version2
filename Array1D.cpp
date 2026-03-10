@@ -47,6 +47,24 @@ struct Array1D
 	}
 };
 
+template <typename dtype>
+Array1D<dtype> Expand(const Array1D<dtype> Original, size_t newSize, dtype fillValue)
+{
+	if (newSize < Original.size)
+	{
+		throw std::invalid_argument("New size must be larger then original."); 
+	}
+	Array1D<dtype> ExpandedArray(newSize);
+	for (size_t i{ 0 }; i < Original.size; i++)
+	{
+		ExpandedArray.data[i] = Original.data[i];
+	}
+	for (size_t i = Original.size; i < newSize; i++)
+	{
+		ExpandedArray.data[i] = fillValue;
+	}
+	return ExpandedArray;
+}
 
 template <typename dtype,typename Utype>
 Array1D<std::common_type_t<dtype, Utype>> OneDimAddition(const Array1D<dtype>& Array1, const Array1D<Utype>& Array2) 
@@ -104,18 +122,26 @@ Array1D<std::common_type_t<dtype, Utype>> OneDimScalarMultiplication(const Array
 template <typename dtype,typename Utype>
 Array1D<std::common_type_t<dtype, Utype>> OneDimCrossProduct(const Array1D<dtype>& Array1, const Array1D<Utype> Array2)
 {
-	if (Array1.size != Array2.size)
+	if (Array1.size > 3)
 	{
-		throw std::invalid_argument("Arrays must be same size.");
+		throw std::invalid_argument("Array 1's size is to large. You can not perform the cross product involving a vector with more then 3 elements.");
 	}
-	using Result_Type = std::common_type_t<dtype, Utype >> ;
-	Array1D<Result_Type> ResultantArray(Array1.size); 
-	for (size_t i{ 0 }; i < Array1.size; i++)
+	else if (Array2.size > 3)
 	{
-		//idk the fucking math
+		throw std::invalid_argument("Array 2's size is to large. You can not peform cross product involving a vector with more then 3 elements.");
 	}
-}
+	auto ArrayA = (Array1.size < 3) ? Expand(Array1, 3, 0) : Array1;
+	auto ArrayB = (Array2.size < 3) ? Expand(Array2, 3, 0) : Array2;
 
+	using Result_Type = std::common_type_t<dtype, Utype >> ;
+	Array1D<Result_Type> ResultantArray(Array1.size);
+	//hardcode
+	ResultantArray.data[0] = ArrayA.data[1] * ArrayB.data[2] - ArrayA.data[2] * ArrayB.data[1];
+	ResultantArray.data[1] = ArrayA.data[0] * ArrayB.data[2] - ArrayA.data[2] * ArrayB.data[0];
+	ResultantArray.data[2] = ArrayA.data[0] * ArrayB.data[1] - ArrayA.data[1] * ArrayB.data[0];
+
+	return ResultantArray;
+}
 
 template <typename dtype, typename Utype>
 std::common_type_t<dtype, Utype> OneDimDotProduct(const Array1D<dtype>& Array1, const Array1D<Utype>& Array2) 
