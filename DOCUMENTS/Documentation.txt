@@ -4,11 +4,7 @@ DOCUMENTATION
 
 All functions of objects do not modify objects. All functions are const. 
 All functions return seperate, new objects
-For any A (operator) B = New heap allocated object of type of A/B
 
-
-
->> 1D Array Types ---- OBJECTS ----
 -Name: Array1D  ---TEMPLATE
 		-> Constructor Parameters: Dataypes n
 			-> FILLS WHOLE ARRAY WITH 0's
@@ -37,7 +33,7 @@ For any A (operator) B = New heap allocated object of type of A/B
 				-> Returns: A • B 
 
 
->>2D Matrix Types ---- OBJECTS -----
+
 	- Name: Array Matrix   ---TEMPLATE
 		Description: A 2D matrix with m x n that functions as a Flattened 1D Array Matrix of size(m * n)
 		-> Constructor Parameters : Datatypes m & n.
@@ -82,8 +78,6 @@ For any A (operator) B = New heap allocated object of type of A/B
 				-> Parameters: Matrix A
 				-> Returns: [Matrix A.rows() * Matrix A.cols()]
 		-> Destructor: Deletes Matrix and Prints address and Identifier Tag
-	- Name: Standard Matrix --TEMPLATE
-		Description: A 2D Matrix that acts and functions as a 2D Matrix of [m][n] structure;
 		
 
 
