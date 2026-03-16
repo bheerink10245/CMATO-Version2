@@ -2,12 +2,8 @@
 
 --AVOID TECHNICAL DEBT---
 
-1.Do math for Array1D cross product 
 2.Incoporate move semantics for free function copying 
-3. Outline, Construct, and Polish TwoDimParent along with all inhertiance values for 2D objs. 
 4.build functions for ArrayMatrix.cpp
-5.BuildFunctions for StandardMatrix
-6. Do math for all 2D Multiplication
 7. Do math for CoFactor and Identity 
 -> For identity, create a fucntion that creats a identity for n x n, but make sure to check it is infact an n x n
 8. Math check for all object functions and methods
