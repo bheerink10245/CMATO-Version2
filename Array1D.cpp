@@ -155,7 +155,7 @@ std::common_type_t<dtype, Utype> OneDimDotProduct(const Array1D<dtype>& Array1, 
 	Result_Type DotProductSum = 0;
 	for (size_t i{ 0 }; i < Array1.size; i++)
 	{
-		DotProductSum += Array1[i] * Array2[i];
+		DotProductSum += Array1.data[i] * Array2.data[i];
 	}
 	return DotProductSum;
 }
