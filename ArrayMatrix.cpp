@@ -1,3 +1,9 @@
+//READ --- As of 3/30:
+// Major issues within free function Matrix multi &
+//      Actual object data passing creations
+    
+    
+//MUST DO:
 // 1. Constructor chaining construction
 // 2. Fix all resultants in order they take 2 parameters that can be used in constructor chaining construction
 //  > Specific Constructor possiblle for _ResultMatrix 
@@ -6,7 +12,7 @@
 // 5. Do memory clenup
 
 
-#include <iostream>
+  #include <iostream>
 #include <stdexcept>
 #include <string>
 #include <cstring>
@@ -154,7 +160,7 @@ Matrix<std::common_type_t<_T,_Y>> MatrixMultiplication(const Matrix<_T>& Matrix1
             
                 _vecDot += static_cast<_RType>(Matrix1.data[i * Matrix1._columns + k]) * static_cast<_RType>(Matrix2.data[k * Matrix2._columns + j]);
             }
-            _ResultantM.data[i * Matrix2._columns + j] = sum;
+            _ResultantM.data[i * Matrix2._columns + j] = _vecDot;
         }
     }
     return _ResultantM;
