@@ -6,6 +6,6 @@
 4.build functions for ArrayMatrix.cpp
 7. Do math for CoFactor and Identity 
 -> For identity, create a fucntion that creats a identity for n x n, but make sure to check it is infact an n x n
-8. Math check for all object functions and methods
+8. Math check for all free funcs
 
 
